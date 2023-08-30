@@ -7,8 +7,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -17,8 +15,14 @@
 <body>
 <header>
     <h1 id="title">Our Pricing</h1>
-    Annually
-    Monthly
+    <div class="checkbox-input">
+      <input type="checkbox" name="checkbox" class="checkbox" id="chk">
+      <label class="label" for="chk">
+          <i class="anually"></i>
+          <i class="monthly"></i>
+          <div class="ball"></div>
+      </label>
+    </div>
 </header>
 <main>
     <section class="plan-box">
@@ -28,24 +32,24 @@
       <p class="paragraph-plan-box">500 GB Storage</p>
       <p class="paragraph-plan-box">2 Users Allowed</p>
       <p class="paragraph-plan-box">Send up to 3 GB</p>
-      Learn More
+      <button>Learn More</button>
     </section>
     <section class="plan-box professional">
-      Professional
+      <p class="paragraph-plan-box">Professional</p>
       &dollar;24.99
       &dollar;249.99
       <p class="paragraph-plan-box">1 TB Storage</p>
       <p class="paragraph-plan-box">5 Users Allowed</p>
       <p class="paragraph-plan-box">Send up to 10 GB</p>
-      <p class="paragraph-plan-box">Learn More</p>
+      <button>Learn More</button>
     </section>
     <section class="plan-box">
-      Master
+      <p class="paragraph-plan-box">Master</p>
       &dollar;39.99
       &dollar;399.99
       <p class="paragraph-plan-box">2 TB Storage</p>
-      <p>10 Users Allowed</p>
-      <p>Send up to 20 GB</p>
+      <p class="paragraph-plan-box">10 Users Allowed</p>
+      <p class="paragraph-plan-box">Send up to 20 GB</p>
       <button>Learn M</button>
     </section>
 </main>ore
