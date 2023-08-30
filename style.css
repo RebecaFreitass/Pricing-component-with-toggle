@@ -48,18 +48,28 @@ header {
     justify-content: center;
     gap: 1rem;
 }
-.toggle{
-    background-color: hsl(237, 63%, 64%);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
+.checkbox-input label {
+    background: linear-gradient( hsl(236, 72%, 79%),  hsl(237, 63%, 64%) );
+    width: 3.5rem;
+    border-radius: 2rem;
     border: none;
+    padding: 0.1rem 0.3rem ;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
 }
-.ball{
-    width: 2rem;
-    border-radius:100%;
+.checkbox-input input {
+    left: 0;
+}
+.ball {
+    width: 1.5rem;
+    border-radius: 100%;
     background-color: white;
-    height:2rem;
+    height: 1.5rem;
+    transition: transform 0.5s ease;
+    position: absolute;
 }
 main {
     display: flex;
