@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Pricing-component-with-toggle</title>
 </head>
 <body>
   <img src="images/bg-bottom.svg" alt="" id="img-bottom">
@@ -17,46 +13,49 @@
 <header>
     <h1 id="title">Our Pricing</h1>
     <div class="checkbox-input">
-      <input type="checkbox" name="checkbox" class="checkbox" id="chk">
-      <label class="label" for="chk">
-          <i class="anually"></i>
-          <i class="monthly"></i>
-          <div class="ball"></div>
+      <span class="span-input" id="Anually">Anually</span>
+      <input type="checkbox" name="toggle" class="toggle" id="tgl" unchecked >
+      <label for="toggle">
+        <div class="ball"></div>
       </label>
+      <span class="span-input" id="monthly">Monthly</span>
     </div>
 </header>
 <main>
-    <section class="plan-box">
-      <p class="paragraph-plan-box">Basic</p>
-      <h1 class="monthly-price">&dollar;19.99</h1>
-      <h1 class="anually-price">&dollar;199.99</h1>
-      <p class="paragraph-plan-box">500 GB Storage</p>
-      <p class="paragraph-plan-box">2 Users Allowed</p>
-      <p class="paragraph-plan-box">Send up to 3 GB</p>
-      <button>Learn More</button>
+    <section class="plan-box left">
+      <p class="paragraph-plan-box ">Basic</p>
+      <div class="price-box">
+        <h1 class="monthly-price price">&dollar;19.99</h1>
+        <h1 class="anually-price price">&dollar;199.99</h1>
+      </div>
+      <p class="paragraph-plan-box description">500 GB Storage</p>
+      <p class="paragraph-plan-box description">2 Users Allowed</p>
+      <p class="paragraph-plan-box description last">Send up to 3 GB</p>
+      <button class="btn-more">Learn More</button>
     </section>
     <section class="plan-box professional">
       <p class="paragraph-plan-box">Professional</p>
-      <h1 class="monthly-price">&dollar;24.99</h1>
-      <h1 class="anually-price">&dollar;249.99</h1>
-      <p class="paragraph-plan-box">1 TB Storage</p>
-      <p class="paragraph-plan-box">5 Users Allowed</p>
-      <p class="paragraph-plan-box">Send up to 10 GB</p>
-      <button>Learn More</button>
+      <h1 class="monthly-price price">&dollar;24.99</h1>
+      <h1 class="anually-price price">&dollar;249.99</h1>
+      <p class="paragraph-plan-box description">1 TB Storage</p>
+      <p class="paragraph-plan-box description">5 Users Allowed</p>
+      <p class="paragraph-plan-box description last">Send up to 10 GB</p>
+      <button class="btn-more professional-btn">Learn More</button>
     </section>
-    <section class="plan-box">
+    <section class="plan-box rigth">
       <p class="paragraph-plan-box">Master</p>
-      <h1 class="monthly-price">&dollar;39.99</h1>
-      <h1 class="anually-price">&dollar;399.99</h1>
-      <p class="paragraph-plan-box">2 TB Storage</p>
-      <p class="paragraph-plan-box">10 Users Allowed</p>
-      <p class="paragraph-plan-box">Send up to 20 GB</p>
-      <button>Learn More</button>
+      <h1 class="monthly-price price">&dollar;39.99</h1>
+      <h1 class="anually-price price">&dollar;399.99</h1>
+      <p class="paragraph-plan-box description">2 TB Storage</p>
+      <p class="paragraph-plan-box description">10 Users Allowed</p>
+      <p class="paragraph-plan-box description last">Send up to 20 GB</p>
+      <button class="btn-more">Learn More</button>
     </section>
 </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="toggle.js"></script>
 </body>
 </html>

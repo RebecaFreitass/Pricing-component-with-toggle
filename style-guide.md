@@ -17,8 +17,8 @@ The designs were created to the following widths:
 
 - Very Light Grayish Blue: hsl(240, 78%, 98%)
 - Light Grayish Blue: hsl(234, 14%, 74%)
-- Grayish Blue: hsl(233, 13%, 49%)
-- Dark Grayish Blue: hsl(232, 13%, 33%)
+- GrayishBlue: hsl(233, 13%, 49%)
+- DarkGrayishBlue: hsl(232, 13%, 33%)
 
 ## Typography
 
